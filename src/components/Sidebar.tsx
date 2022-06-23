@@ -14,8 +14,8 @@ type GetLessonsQueryResponse = {
 const GetLessonsQuery = gql`
   query GetLessonsQuery {
     lessons (
-    orderBy: availableAt_ASC,
-    stage: PUBLISHED
+      orderBy: availableAt_ASC,
+      stage: PUBLISHED
     ) {
       id
       lessonType
